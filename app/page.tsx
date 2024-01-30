@@ -16,8 +16,8 @@ export default function Home() {
 			<motion.div
 				className={styles.mask}
 				animate={{
-                    WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
-                    WebkitMaskSize: `${size}px`,
+					WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
+					WebkitMaskSize: `${size}px`,
 				}}
 				transition={{ type: "tween", ease: "backOut", duration: 0.3 }}
 			>
@@ -29,19 +29,20 @@ export default function Home() {
 						setIsHovered(false);
 					}}
 				>
-					A visual designer - with skills that haven&apos;t been
-					replaced by A.I (yet) - making good shit if the paycheck is
-					equally good.
+					A web developer - with skills that haven&apos;t been
+					replaced by A.I (yet) - not just an ordinary developer but{" "}
+					<span className="text-white"> an web artist</span>.
 				</p>
 			</motion.div>
 			<div className={styles.body}>
 				<p>
 					I&apos;m a
-					<span>
-						selectively skilled 
+					<span className="text-[#ec4e39]">
+						{" "}
+						selectively skilled{" "}
 					</span>
-					product designer with strong focus on producing high quality
-					& impactful digital experience.
+					web developer with strong focus on producing high quality &
+					impactful digital experience.
 				</p>
 			</div>
 		</main>
